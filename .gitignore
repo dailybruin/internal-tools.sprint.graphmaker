@@ -1,0 +1,14 @@
+venv
+*.log
+*.env
+__pycache__
+*.pyc
+*.swp
+.vagrant
+.DS_Store
+staticfiles
+graph_maker/frontend/bundles/*
+node_modules
+webpack-stats.json
+.vscode/*
+*~

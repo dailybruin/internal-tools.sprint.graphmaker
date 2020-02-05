@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  web:
+    build: .
+    image: graph_maker
+    command: ./start.sh
+    ports:
+      - "3000:3000"
+    env_file: .env
+    depends_on:
+      - db
+      - redis
+    volumes:
+      - .:/graph_maker
+  db:
+    image: postgres:latest
+  redis:
+    image: redis:alpine
