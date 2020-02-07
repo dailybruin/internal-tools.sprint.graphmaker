@@ -1,0 +1,30 @@
+{
+  "name": "graph-maker",
+  "version": "1.0.0",
+  "description": "Makes Graphs for Daily Bruin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "pretty-quick --staged",
+    "build": "webpack",
+    "build-production": "webpack --config webpack.prod.config.js --mode production --progress --colors --optimize-minimize --display-error-details",
+    "watch": "webpack --watch",
+    "clean": "rm graph_maker/frontend/bundles/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-loader": "^8.0.6",
+    "react": "^16.12.0",
+    "webpack": "^4.41.5",
+    "webpack-bundle-tracker": "^0.4.3",
+    "webpack-cli": "^3.3.10",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/preset-react": "^7.8.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "dotenv": "^8.2.0"
+  },
+  "dependencies": {}
+}
