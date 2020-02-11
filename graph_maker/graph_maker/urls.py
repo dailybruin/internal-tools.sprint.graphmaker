@@ -20,6 +20,6 @@ from django.conf.urls import include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('react_django.urls')),
+    path('', include('user_profile.urls')),
     # other apps go here.
 ]

@@ -1,13 +1,3 @@
-# Stage 0 - Node build
-FROM node:8
-WORKDIR /graph_maker
-ADD package.json package-lock.json /graph_maker/
-RUN npm install
-# ./jsconfig.json 
-COPY ./webpack.config.js  ./
-COPY graph_maker/frontend graph_maker/frontend
-RUN npm run build-production
-
 # Slightly modified from
 # https://www.caktusgroup.com/blog/2017/03/14/production-ready-dockerfile-your-python-django-app/
 #FROM python:3.6-alpine
@@ -54,7 +44,7 @@ RUN pip install -U -r requirements.txt
 
 # Copy your application code to the container (make sure you create a .dockerignore file if any large files or directories should be excluded)
 
-COPY --from=0 /graph_maker /graph_maker
+COPY /graph_maker /graph_maker
 
 ADD . /graph_maker/
 

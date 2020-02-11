@@ -7,9 +7,9 @@ __pycache__
 .vagrant
 .DS_Store
 staticfiles
-graph_maker/frontend/bundles/*
-node_modules
+frontent/graph_maker/frontend/bundles/*
 webpack-stats.json
 .vscode/*
 *~
 static
+frontend/graph-maker/node_modules/
