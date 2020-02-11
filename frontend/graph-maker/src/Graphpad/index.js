@@ -20,7 +20,6 @@ const data = [
 function Graphpad() {
   return (  
   		<VictoryChart
-        // adding the material theme provided with Victory
         theme={dbtheme}
         domainPadding={20}
       >
