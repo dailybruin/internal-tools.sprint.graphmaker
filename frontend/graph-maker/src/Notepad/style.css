@@ -1,0 +1,40 @@
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+
+.data-column {
+	display: flex;
+	flex-direction: column;
+}
+
+.chart-column{
+	display: flex;
+	flex-direction: column;
+}
+
+table#interpretation {
+	display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+table#interpretation tr:nth-child(even) {
+  background-color: #eee;
+}
+table#interpretation tr:nth-child(odd) {
+  background-color: #fff;
+}
+table#interpretation th {
+  color: white;
+  background-color: black;
+  padding-left: 20px;
+  height: 20px;
+}
+
+.table-scroll{
+  height:150px;
+  overflow:auto;  
+  margin-top:20px;
+}
